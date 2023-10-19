@@ -17,8 +17,8 @@ public class Inventory {
                 for(int j=i;j<currentIndex;j++){
                     products[j] = products[j+1];
                     products[j+1] = null;
-                    currentIndex--;
                 }
+                currentIndex--;
              break;
             }
          }
