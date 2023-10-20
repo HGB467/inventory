@@ -32,31 +32,6 @@ public class Date {
         return String.format("%d/%d/%d", day,month,year);
     }
 
-    public static Date compareDates(Date d1,Date d2){
-        if(d1.getYear()>d1.getYear()){
-            return d1;
-         }
-         else if(d2.getYear()>d2.getYear()){
-           return d2;
-         }
-         else{
-          if(d1.getMonth()>d2.getMonth()){
-           return d1;
-          }
-          else if(d2.getMonth()>d1.getMonth()){
-            return d2;
-          }
-          else{
-            if(d1.getDay()>d2.getDay()){
-                return d1;
-               }
-            else{
-                 return d2;
-               }
-          }
-    }
-}
-
     @Override
     public String toString(){
         return String.format("%d/%d/%d", day,month,year);
