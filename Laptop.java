@@ -47,7 +47,7 @@ public class Laptop extends Electronics{
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "Processor: %s, RAM: %d GB, Width: %d m, Height: %d m", processor,ramSize,width,height);
+        return String.format(super.toString() + "Processor: %s, RAM: %d GB, Width: %d m, Height: %d m ", processor,ramSize,width,height);
     }
 
 }

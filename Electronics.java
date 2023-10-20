@@ -26,7 +26,7 @@ public class Electronics extends Product {
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "Power Consumption: %d, Warrenty: %d m", powerConsumption,warrenty);
+        return String.format(super.toString() + "Power Consumption: %d W, Warrenty: %d M, ", powerConsumption,warrenty);
     }
 
 }

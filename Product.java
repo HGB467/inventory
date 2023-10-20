@@ -8,7 +8,7 @@ public class Product {
     private ProductType productType;
 
     public Product(String n,int p, int q, int t,ProductType p1){
-       this.id = idsTaken++;
+       this.id = ++idsTaken;
        this.name = n;
        this.price = p;
        this.quantity = q;
@@ -66,7 +66,7 @@ public class Product {
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "ID: %d, Name: %s, Price: %d, Quantity: %d, Tax: %d, Product Type: %s", id,name,price,quantity,tax,productType);
+        return String.format("ID: %d, Name: %s, Price: %d, Quantity: %d, Tax: %d, Product Type: %s, ", id,name,price,quantity,tax,productType);
     }
 
 

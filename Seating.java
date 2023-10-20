@@ -20,7 +20,7 @@ public class Seating extends Furniture {
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "Load Capacity: %d KG",loadCapacity);
+        return String.format(super.toString() + "Load Capacity: %d KG ",loadCapacity);
     }
 
 }

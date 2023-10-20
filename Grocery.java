@@ -47,7 +47,7 @@ public class Grocery extends Product {
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "Expiration Date: %s, Protein %: %d, Fat %: %d, Carbs: %d", expirationDate,proteinAmount,fatAmount,carbsAmount);
+        return String.format(super.toString() + "Expiration Date: %s, Protein %: %d, Fat %: %d, Carbs: %d ", expirationDate,proteinAmount,fatAmount,carbsAmount);
     }
 
     

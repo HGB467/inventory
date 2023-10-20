@@ -16,7 +16,7 @@ public class Table extends Furniture {
 
         @Override
         public String toString(){
-            return String.format(super.toString() + "Shape: %d KG", shape);
+            return String.format(super.toString() + "Shape: %d KG ", shape);
         }
     
     

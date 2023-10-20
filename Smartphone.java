@@ -37,7 +37,7 @@ public class Smartphone extends Electronics{
 
     @Override
     public String toString(){
-        return String.format(super.toString() + "Operating System: %s, Storage Capacity: %d GB, Camera Resolution: %d MP", operatingSystem,storageCapacity,cameraResolution);
+        return String.format(super.toString() + "Operating System: %s, Storage Capacity: %d GB, Camera Resolution: %d MP ", operatingSystem,storageCapacity,cameraResolution);
     }
 
 

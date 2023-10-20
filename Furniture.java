@@ -36,7 +36,7 @@ public class Furniture extends Product {
 
      @Override
      public String toString(){
-      return String.format(super.toString() + "Material: %s, Width: %d m, Length: %d m",material,width,length);
+      return String.format(super.toString() + "Material: %s, Width: %d m, Length: %d m, ",material,width,length);
   }
 
 }

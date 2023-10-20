@@ -2,9 +2,12 @@ public class Inventory {
 
     Product[] products;
     int currentIndex = 0;
+    int[] monthlySales;
+    int salesIdx = 0;
 
     public Inventory(){
         products = new Product[100];
+        monthlySales = new int[100];
     }
 
     public void addProduct(Product p1){
@@ -48,7 +51,7 @@ public class Inventory {
         int tempIndex = 0;
         for(int i=0;i<currentIndex;i++){
             if(products[i].getProductType()==p){
-              products[tempIndex++] = products[i];
+              tempProducts[tempIndex++] = products[i];
             }
          }
          return tempProducts;
@@ -161,6 +164,25 @@ public class Inventory {
                break;
             }
          }
+     }
+
+     public Product[] getLowStockProducts(){
+        Product[] tempProducts = new Product[100];
+        int tempIndex = 0;
+        for(int i=0;i<currentIndex;i++){
+            if(products[i].getQuantity()<=5){
+              tempProducts[tempIndex++] = products[i];
+            }
+         }
+         return tempProducts;
+     }
+
+     public void setThisMonthSale(int sale){
+         monthlySales[salesIdx++] = sale;
+     }
+
+     public int getSaleByMonth(int month){
+        return monthlySales[month-1];
      }
 
 
